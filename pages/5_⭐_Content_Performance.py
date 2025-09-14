@@ -1,19 +1,21 @@
 import streamlit as st
+import plotly.express as px
+import pandas as pd
 
-st.title("⭐ Content Performance – Top vs Weak Posts")
+st.title("⭐ Content Performance – Engagement Scatter")
 
-st.subheader("Top 3 Instagram Posts")
-st.write("""
-1. “Be bold and comfy in maroon core pieces” – 456 likes | 52 comments  
-2. “Just dropped – Homegrown collection 🇦🇪” – 399 likes | 12 comments  
-3. “Staying in is the new going out” – 287 likes | 12 comments  
-""")
+data = {
+    "Post": [
+        "Be bold and comfy", "Homegrown collection", "Staying in = going out",
+        "Every mile counts", "Don’t let fit get away", "Family days"
+    ],
+    "Likes": [456, 399, 287, 257, 264, 228],
+    "Comments": [52, 12, 12, 8, 14, 16]
+}
+df = pd.DataFrame(data)
 
-st.subheader("Weak 3 Instagram Posts")
-st.write("""
-1. “Every mile counts …” – 257 likes | 8 comments  
-2. “Don’t let your favorite fit get away” – 264 likes | 14 comments  
-3. “Family days done right” – 228 likes | 16 comments  
-""")
+fig = px.scatter(df, x="Likes", y="Comments", text="Post",
+                 size="Likes", color="Comments", hover_name="Post")
 
-st.success("**Insight:** Storytelling and campaign novelty perform best. Generic product posts underperform and create engagement fatigue.")
+st.plotly_chart(fig, use_container_width=True)
+st.success("Top-right = most engaging posts. Bottom-left = weakest performers.")
