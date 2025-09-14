@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.title("💬 Review Sentiment Analysis")
 
 # Default reviews with positive and negative themes
-reviews = st.text_area("Paste sample reviews here:", 
+reviews = st.text_area("Some of the sample reviews are as below:", 
 """
 Love the quality and mission of the brand
 Fabric feels comfortable and sustainable
