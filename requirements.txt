@@ -7,3 +7,5 @@ wordcloud
 numpy
 Pillow
 requests
+beautifulsoup4
+lxml
