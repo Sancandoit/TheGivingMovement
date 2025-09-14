@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#7BC242"          # Eco Green for highlights
+backgroundColor="#FFFFFF"       # White background for clarity
+secondaryBackgroundColor="#F2F2F2"  # Light grey panels
+textColor="#000000"             # Black text
+font="sans serif"
