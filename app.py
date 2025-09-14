@@ -18,7 +18,7 @@ st.set_page_config(
 local_css("assets/styles.css")
 
 # --- Load Logo ---
-logo = Image.open("assets/TGM_logo.jpg")
+logo = Image.open("assets/TGM logo.jpg")
 st.sidebar.image(logo, use_container_width=True)
 
 # --- Homepage Content from README ---
