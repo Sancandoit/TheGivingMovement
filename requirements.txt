@@ -3,5 +3,7 @@ pandas
 matplotlib
 plotly
 pytrends
-requests
 wordcloud
+numpy
+Pillow
+requests
