@@ -1,13 +1,23 @@
 import streamlit as st
+import json
 
-st.title("📱 Social Media Tracker")
+st.title("📱 Social Media Tracker – Live Follower Counts")
 
-st.subheader("Instagram")
-st.metric("Followers", "1.23M")
-st.metric("Engagement Rate", "0.01%")
+try:
+    with open("social_data.json", "r") as f:
+        data = json.load(f)
 
-st.subheader("TikTok")
-st.metric("Followers", "70.1K")
-st.metric("Videos", "437")
+    st.subheader("Instagram")
+    st.metric("Followers", f"{data['instagram']['followers']:,}")
+    st.metric("Posts", f"{data['instagram']['posts']:,}")
+    st.caption(f"Last updated: {data['last_updated']}")
 
-st.info("Future Upgrade: Integrate Social Blade API for live follower counts.")
+    st.subheader("TikTok")
+    st.metric("Followers", f"{data['tiktok']['followers']:,}")
+    st.metric("Likes", f"{data['tiktok']['likes']:,}")
+    st.caption(f"Last updated: {data['last_updated']}")
+
+    st.success("Follower counts auto-refresh via Social Blade scraper.")
+
+except FileNotFoundError:
+    st.error("⚠️ social_data.json not found. Run update_social_data.py first.")
