@@ -21,9 +21,6 @@ local_css("assets/styles.css")
 logo = Image.open("assets/TGM logo.jpg")
 st.sidebar.image(logo, use_container_width=True)
 
-# --- Introduction Page Title ---
-st.title("📖 Introduction")
-
 # --- Homepage Content from README ---
 try:
     with open("README.md", "r", encoding="utf-8") as f:
