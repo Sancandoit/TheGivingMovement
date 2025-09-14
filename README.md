@@ -5,7 +5,7 @@ This project analyzes TGM’s online presence across **search, traffic, social m
 
 ---
 
-## 👥 Group 6 – Team Members
+## Group 6 – Team Members
 - Sanchit Singh Thapa  
 - Ritika Modi  
 - Kashish Sethi  
@@ -13,7 +13,7 @@ This project analyzes TGM’s online presence across **search, traffic, social m
 
 ---
 
-## 🚀 Features
+## Features
 ### 1. Search & SEO
 - Live **Google Trends** (TGM vs SQUATWOLF, UAE)
 - Keyword analysis (branded vs category opportunities)
