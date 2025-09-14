@@ -70,5 +70,3 @@ Logo included in the sidebar.
 - **Requests** (for APIs / scraping)
 
 ---
-
-## 📂 File Structure
