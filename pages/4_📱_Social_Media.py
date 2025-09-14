@@ -1,19 +1,13 @@
 import streamlit as st
 
-st.title("📱 Social Media Presence")
+st.title("📱 Social Media Tracker")
 
 st.subheader("Instagram")
-st.write("""
-- Followers: 1.23M  
-- Posts: 1,844  
-- Engagement rate: 0.01% (very low)  
-""")
+st.metric("Followers", "1.23M")
+st.metric("Engagement Rate", "0.01%")
 
 st.subheader("TikTok")
-st.write("""
-- Followers: 70.1K  
-- Likes: 294.6K | Videos: 437  
-- Steady growth (+1k in last 14 days)  
-""")
+st.metric("Followers", "70.1K")
+st.metric("Videos", "437")
 
-st.success("**Insight:** TGM has scale on Instagram but poor engagement. TikTok has growth potential but is under-leveraged compared to competitors.")
+st.info("Future Upgrade: Integrate Social Blade API for live follower counts.")
