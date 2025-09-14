@@ -8,7 +8,7 @@ This project analyzes TGM’s online presence across **search, traffic, social m
 ## Group 6 – Team Members
 - Sanchit Singh Thapa  
 - Ritika Modi  
-- Kashish Sethi  
+- Kashish Sethia 
 - Aryan Bharali  
 
 ---
